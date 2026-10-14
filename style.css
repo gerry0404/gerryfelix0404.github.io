@@ -1,0 +1,102 @@
+
+/* General page style */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Main page content */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    min-height: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sticky horizontal navigation bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for pages that are not active */
+nav a:not(.active):hover {
+    background-color: #555;
+}
+
+/* Active page color */
+nav a.active {
+    background-color: #e63946;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+/* Mobile-friendly navigation */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 12px 15px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}
